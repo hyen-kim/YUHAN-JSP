@@ -1,6 +1,9 @@
 package com.servlet.ex;
 
 import java.io.IOException;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -50,5 +53,19 @@ public class LifeCycleEx extends HttpServlet {
 		// 최초 요청이 들어왔을 때 딱 한번 실행
 		System.out.println("init");
 	}
+	
+	@PostConstruct
+	private void initPostConstruct() {
+		// 선처리 작업 -> init 메소드 전에 실행
+		System.out.println("initPostConstruct");
+	}
+	
+	@PreDestroy
+	private void destoryPreDestory() {
+		// 후처리 작업 -> destory 된 후에 실행
+		System.out.println("destoryPreDestory");
+	}
+	
+	
 
 }
