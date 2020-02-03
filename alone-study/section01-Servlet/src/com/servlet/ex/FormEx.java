@@ -37,8 +37,13 @@ public class FormEx extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.setCharacterEncoding("EUC-KR");	// 한글을 안깨지게 하기위해 
+		
+		String name = request.getParameter("name");
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
+		
 		String[] hobbys = request.getParameterValues("hobby");
 		String major = request.getParameter("major");
 		String protocol = request.getParameter("protocol");
@@ -49,6 +54,8 @@ public class FormEx extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		
 		writer.println("<html><head></head><body>");
+		
+		writer.println("이름 : " + name + "<br/>");
 		writer.println("아이디 : " + id + "<br/>");
 		writer.println("비밀번호 : " + pw + "<br/> ");
 	
