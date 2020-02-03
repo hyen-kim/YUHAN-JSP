@@ -13,6 +13,6 @@
 	<%@ include file="include02.jsp"%>
 	<h1>다시 include01.jsp파일입니다.</h1>
 	<br />
-
+	<%-- Jsp에서 쓰는 주석  --%>
 </body>
 </html>
