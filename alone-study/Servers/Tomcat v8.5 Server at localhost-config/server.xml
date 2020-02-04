@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="testServers" path="/testServers" reloadable="true" source="org.eclipse.jst.jee.server:testServers"/><Context docBase="section01-Servlet" path="/section01-Servlet" reloadable="true" source="org.eclipse.jst.jee.server:section01-Servlet"/><Context docBase="section01-JSP" path="/section01-JSP" reloadable="true" source="org.eclipse.jst.jee.server:section01-JSP"/><Context docBase="section01-ActionTag" path="/section01-ActionTag" reloadable="true" source="org.eclipse.jst.jee.server:section01-ActionTag"/></Host>
+      <Context docBase="testServers" path="/testServers" reloadable="true" source="org.eclipse.jst.jee.server:testServers"/><Context docBase="section01-Servlet" path="/section01-Servlet" reloadable="true" source="org.eclipse.jst.jee.server:section01-Servlet"/><Context docBase="section01-JSP" path="/section01-JSP" reloadable="true" source="org.eclipse.jst.jee.server:section01-JSP"/><Context docBase="section01-ActionTag" path="/section01-ActionTag" reloadable="true" source="org.eclipse.jst.jee.server:section01-ActionTag"/><Context docBase="section01-Cookie" path="/section01-Cookie" reloadable="true" source="org.eclipse.jst.jee.server:section01-Cookie"/></Host>
     </Engine>
   </Service>
 </Server>
