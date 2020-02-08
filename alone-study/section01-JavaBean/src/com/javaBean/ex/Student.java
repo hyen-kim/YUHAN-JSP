@@ -2,15 +2,19 @@ package com.javaBean.ex;
 
 public class Student {
 	
+	// 멤버변수
 	private String name;
 	private int age;
 	private int grade;
 	private int studentNum;
 	
+	
 	public Student() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	
+	// get set
 	public String getName() {
 		return name;
 	}
