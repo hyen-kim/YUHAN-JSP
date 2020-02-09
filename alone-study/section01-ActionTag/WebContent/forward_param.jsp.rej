@@ -1,0 +1,19 @@
+diff a/alone-study/section01-ActionTag/WebContent/forward_param.jsp b/alone-study/section01-ActionTag/WebContent/forward_param.jsp	(rejected hunks)
+@@ -9,12 +9,15 @@
+ <body>
+ 	<h1>forward_param.jsp �Դϴ�.</h1>
+ 	
++	<!-- ���� -->
+ 	<%!
+ 		String id, pw;
+ 	%> 
+ 	
+-	<% id=request.getParameter("id");
+-		pw=request.getParameter("pw");
++	
++	<!-- ���� ������-->
++	<% id = request.getParameter("id");
++		pw = request.getParameter("pw");
+ 	%>
+ 	���̵� : <%=id %><br />
+ 	��й�ȣ : <%=pw %>
