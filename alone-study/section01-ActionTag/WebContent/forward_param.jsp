@@ -9,12 +9,15 @@
 <body>
 	<h1>forward_param.jsp 입니다.</h1>
 	
+	<!-- 선언 -->
 	<%!
 		String id, pw;
 	%> 
 	
-	<% id=request.getParameter("id");
-		pw=request.getParameter("pw");
+	
+	<!-- 값을 가져옴-->
+	<% id = request.getParameter("id");
+		pw = request.getParameter("pw");
 	%>
 	아이디 : <%=id %><br />
 	비밀번호 : <%=pw %>
