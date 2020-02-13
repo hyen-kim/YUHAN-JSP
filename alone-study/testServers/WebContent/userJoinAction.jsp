@@ -4,6 +4,7 @@
 <%@ page import="user.UserDAO"%>
 <%@ page import="java.io.PrintWriter"%>
 <%@ page import="utill.DatabaseUtill"%>
+
 <%
 	request.setCharacterEncoding("UTF-8");
 	String userID = null;

@@ -7,7 +7,7 @@ public class DatabaseUtill {
 
 	public static Connection getConnection() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:43306/tutorial";
+			String dbURL = "jdbc:mysql://localhost:43306/tutorial?serverTimezone=UTC";
 			String dbID = "root";
 			String dbPW = "201907033";
 			Class.forName("com.mysql.cj.jdbc.Driver");
