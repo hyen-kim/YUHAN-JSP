@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>우리의 첫 번째 페이지</title>
 </head>
 <body>
-	helloworld
+	Hello World ! 
+	<form action="userJoinAction.jsp" method="post">
+		<input type="text" name="userID">
+		<input type="text" name="userPW">
+		<input type="submit" value="회원가입">
+	</form>
 </body>
 </html>
