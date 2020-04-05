@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-		Enumeration enumeration = session.getAttributeNames();
+		enumeration enumeration = session.getAttributeNames();
 		while(enumeration.hasMoreElements()){
 			String sName = enumeration.nextElement().toString();
 			String sValue = (String)session.getAttribute(sName);
